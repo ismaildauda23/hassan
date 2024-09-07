@@ -1,0 +1,360 @@
+/* Universal Selector Declaration */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General font to be used in body execpt when overiden*/
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Unstyle anchor elements to avoid underline */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* header style */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 26px 0;
+  width: 100%;
+}
+
+/* nav bar style */
+nav {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  justify-content: space-between;
+}
+
+/* navigation image */
+nav img {
+  width: 250px;
+  aspect-ratio: auto;
+}
+
+/* navigation items */
+nav ul {
+  width: 30%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  color: #7a7474;
+}
+
+/* nav anchor link styling */
+nav a {
+  text-decoration: none;
+  color: #7a7474;
+}
+nav a:hover {
+  color: #00b39b;
+}
+
+/* end of header style*/
+
+/* Start of Main*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* first section */
+.section--1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 60%;
+}
+
+/* header image in section 1 */
+.section--1 img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+/* double paragraph in section 1 */
+.section--1 div {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 15px;
+  column-gap: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #7a7474;
+}
+
+/* SECTION 2 STYLING */
+
+.section--2 {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  column-gap: 30px;
+  margin: 30px;
+  color: white;
+}
+
+/* COLOURED BOXES IN SECTION 2 */
+#for--patients,
+#for--doctors,
+#for--clinics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 30px;
+  height: 350px;
+  font-size: large;
+}
+
+#for--patients {
+  background-color: #00ccb1;
+}
+
+#for--doctors {
+  background-color: #3d83df;
+}
+
+#for--clinics {
+  background-color: #1b2734;
+}
+
+/* ICONS FOR THE COLOURED BOXES */
+.section--2 img {
+  width: 30px;
+  aspect-ratio: auto;
+}
+
+/* DROP-DOWN MENU FOR THE COLOURED BOXES */
+.section--2 select {
+  display: block;
+  background-color: inherit;
+  color: white;
+  text-decoration: underline;
+  border: none;
+}
+
+/* SECTION 3 STYLING */
+.section--3 {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 20px;
+  height: 300px;
+  color: #00b39b;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/* SMALL IMAGES IN SECTION 3 */
+.section--3 > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space space-between;
+  align-content: space-between;
+}
+
+.section--3 img {
+  width: 100px;
+  aspect-ratio: auto;
+  padding: 0 10px;
+}
+
+/* SECTION 4 */
+
+.section--4 {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  padding: 10px 50px 0 10px;
+  justify-content: space-between;
+  margin: 20px 0;
+  column-gap: 30px;
+  background-color: #d0faf4;
+}
+
+/* STYLING OF SOOME SECTION HEADERS */
+.section--4 h2,
+.section--4 h3,
+.section--1 h2,
+.section--5 h2 {
+  color: #00b39b;
+}
+.section--4 h2,
+.section--1 h2,
+.section--5 h2 {
+  font-weight: 300;
+  font-size: 30px;
+  padding-left: 36px;
+}
+
+/*  */
+#section--4--left--div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding: 60px 20px 0 30px;
+}
+
+#section--4--left--div p {
+  color: #7a7474;
+  padding-left: 36px;
+}
+
+.section--4 h3 {
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+}
+
+#section--4--big--img {
+  height: 60%;
+  aspect-ratio: auto;
+}
+
+/* SECTION 4 RIGHT SIDE */
+.section--4--grid {
+  display: grid;
+  grid-template: 20px 1fr 20px 20px 1fr 20px / 250px 250px;
+  column-gap: 40px;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+/* SMALL ICONS IN SECTION 4 */
+.section--4--grid img {
+  width: 30px;
+  padding: 5px;
+}
+
+/* GRID POSITIONING FOR THE 4 DIVS IN SECTION 4 */
+#grid--1,
+#grid--2,
+#grid--3,
+#grid--4 {
+  display: grid;
+  place-items: center;
+  padding: 15px;
+  background-color: #fff;
+}
+
+#grid--1 {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+#grid--2 {
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+#grid--3 {
+  grid-area: 5 / 1 / 7 / 2;
+}
+
+#grid--4 {
+  grid-area: 4 / 2 / 6 / 3;
+}
+
+/* SECTION 5 */
+.section--5 {
+  width: 40%;
+  text-align: center;
+  margin: 30px;
+}
+
+.section--5 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #7a7474;
+  margin-top: 30px;
+}
+
+/* SECTION 6 */
+.section--6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: center;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin: 70px 20px 30px 20px;
+  font-family: "Roboto", sans-serif;
+  color: #7a7474;
+}
+
+.section--6 > figure {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+}
+.section--6 > figure:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 5px 15px;
+}
+
+.section--6 div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+
+.section--6 a,
+.section--7 button {
+  background-color: #3d83df;
+  border-radius: 5px;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  font-size: x-small;
+  font-weight: 900;
+  margin: 4px;
+  border: none;
+}
+
+/* section 7 */
+.section--7 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  row-gap: 20px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* FOOTER SECTION*/
+
+footer,
+.section--4--grid p {
+  text-align: center;
+  color: #7a7474;
+  font-size: 12px;
+  padding-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+footer a {
+  color: #4d95ce;
+}
